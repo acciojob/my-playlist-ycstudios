@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        a {
+            text-decoration-line: none;
+            color: #0066cc;
+            display: block;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+        
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        
+        video, audio {
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>My Playlist</h1>
+    
+    <h2>Now Playing...</h2>
+    
+    <div class="player_one">
+        <video controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="player_two">
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+    
+    <h2>MP3 Songs</h2>
+    
+    <ul>
+        <li><a href="#" target="_blank">Song 1</a></li>
+        <li><a href="#" target="_blank">Song 2</a></li>
+        <li><a href="#" target="_blank">Song 3</a></li>
+        <li><a href="#" target="_blank">Song 4</a></li>
+        <li><a href="#" target="_blank">Song 5</a></li>
+    </ul>
 </body>
-
 </html>
